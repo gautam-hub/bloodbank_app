@@ -8,7 +8,7 @@ class MyHomePage extends StatelessWidget {
     return Scaffold(
       body: SafeArea(
         child: Container(
-          child: Text("Hello world"),
+          child: Text("Hello world."),
         ),
       ),
     );
