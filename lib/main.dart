@@ -1,4 +1,4 @@
-import 'package:bloodbank_app/screens/onboarding.dart';
+import 'package:bloodbank_app/screens/hello.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Bllood Bank App',
+      title: 'Blood Bank App',
       home: const MyHomePage(),
     );
   }
