@@ -26,7 +26,7 @@ class MyHomePage extends StatelessWidget {
                         Container(
                           padding: EdgeInsets.only(
                             left: 57,
-                            right: 56,
+                            right: 55,
                           ),
                           child: Text(
                             onboardingSingleData["text"]!,
