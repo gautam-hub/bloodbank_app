@@ -9,12 +9,25 @@ class MobileNumber extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton.extended(
+        icon: Icon(Icons.remove),
+        label: Text('Hello'),
+
+        onPressed: () => null,
+        // child: Column(
+        //   children: [
+        //     Icon(Icons.remove),
+        //     Icon(Icons.remove),
+        //     Icon(Icons.remove),
+        //   ],
+        // ),
+      ),
       body: SafeArea(
         child: Container(
           width: double.infinity,
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
+            // crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               //the enter number field
               Container(
@@ -56,22 +69,55 @@ class MobileNumber extends StatelessWidget {
               SizedBox(
                 height: 67,
               ),
-              Container(
-                height: 53,
-                width: 263,
-                decoration: BoxDecoration(
-                  color: MyColors.redPrimary,
-                  borderRadius: BorderRadius.circular(4),
+              TextButton(
+                onPressed: () => {},
+                child: Text(
+                  "Login's",
                 ),
-                child: Center(
-                  child: Text(
-                    "Login",
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
+              ),
+              // coming from global theme
+              ElevatedButton(
+                onPressed: () => {},
+                child: Text(
+                  "Login's",
+                ),
+              ),
+              ElevatedButton(
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                    Colors.yellow,
                   ),
                 ),
-              )
+                onPressed: () => {},
+                child: Text(
+                  "Login's",
+                ),
+              ),
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  primary: Colors.greenAccent,
+                ),
+                onPressed: () => {},
+                child: Text(
+                  "Login's",
+                ),
+              ),
+              // Container(
+              //   height: 53,
+              //   width: 263,
+              //   decoration: BoxDecoration(
+              //     color: MyColors.redPrimary,
+              //     borderRadius: BorderRadius.circular(4),
+              //   ),
+              //   child: Center(
+              //     child: Text(
+              //       "Login",
+              //       style: TextStyle(
+              //         color: Colors.white,
+              //       ),
+              //     ),
+              //   ),
+              // )
             ],
           ),
         ),
