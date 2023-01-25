@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// How to add theme in flutter.
 class BloodCounterScreen extends StatefulWidget {
   const BloodCounterScreen({super.key});
 
