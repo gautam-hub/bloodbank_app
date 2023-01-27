@@ -29,14 +29,3 @@ touch history.dart
 touch all_messages.dart
 touch donors_map.dart
 touch messages.dart
-
-login_screen
-touch otp_screen.dart
-touch sign_up_screen.dart
-touch home.dart
-touch find_donors.dart
-touch incoming_requests.dart
-touch history.dart
-touch all_messages.dart
-touch donors_map.dart
-touch messages.dart
