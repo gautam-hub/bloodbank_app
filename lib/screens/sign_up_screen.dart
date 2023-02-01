@@ -49,7 +49,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
             child: Form(
               key: _formKey,
               child: Column(
-
                 children: [
                   textFieldWithLabel(
                     "Your Name",
@@ -80,8 +79,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         print("Valid");
                         _formKey.currentState!.save();
                         // prefs.setString(key, value)
-
-                        // Navigator.pushNamed(context, Routes.home);
+                        Navigator.pushNamed(context, Routes.home);
                       }
                     },
                     child: const Text('Submit'),
@@ -121,8 +119,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       newValue,
                     )
                   : prefs.setString(userDataFieldKey, ""),
-              print(userDataFieldKey),
-
+              print(
+                  " $userDataFieldKey is ${prefs.getString(userDataFieldKey)}"),
             },
             validator: (value) {
               if (value == null || value.isEmpty) {
