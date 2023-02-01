@@ -66,5 +66,5 @@ class MyApp extends StatelessWidget {
         Routes.messages: (context) => Messages(),
       },
     );
-  }
+  } // added a comment
 }
